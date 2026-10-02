@@ -1,0 +1,1 @@
+CREATE UNIQUE INDEX "shifts_one_open_per_operator" ON "shifts" USING btree ("operator_id") WHERE "shifts"."ended_at" is null;
