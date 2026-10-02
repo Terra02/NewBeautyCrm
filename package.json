@@ -15,6 +15,7 @@
 		"db:generate": "drizzle-kit generate",
 		"db:migrate": "drizzle-kit migrate",
 		"db:seed": "node --env-file=.env --import tsx scripts/seed.ts",
+		"db:bootstrap-admin": "node --env-file=.env --import tsx scripts/bootstrap-admin.ts",
 		"smoke": "node --env-file=.env --import tsx scripts/smoke.ts",
 		"db:studio": "drizzle-kit studio",
 		"auth:schema": "auth generate --config auth.generate.ts --adapter drizzle --dialect postgresql --output src/lib/server/db/auth.schema.ts --yes"
